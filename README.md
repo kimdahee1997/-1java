@@ -301,3 +301,9 @@ public class test {
 }
 
 
+
+결과
+A
+20
+100
+
