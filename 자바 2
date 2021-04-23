@@ -1,0 +1,251 @@
+package week4;
+import java.util.Scanner;
+
+public class ScannerEx{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		System.out.print("월(1~12월)을 입력:");
+		int month = scan.nextInt(); // 정수로 월 입력
+		
+		switch(month) {
+			case 3: case 4: case 5:
+				System.out.println("봄입니다.");
+				break;
+			case 6: case 7: case 8:
+				System.out.println("여름입니다.");
+				break;
+			case 9: case 10: case 11:
+				System.out.println("가을입니다.");
+				break;
+			default:
+				System.out.println("잘못된 입력입니다.");
+		}		
+ }
+}	
+
+
+결과 
+월(1~12월)을 입력:
+
+
+
+
+package week4;
+
+import java.util.Scanner;
+
+public class ScannerEx{
+	public static void main(String[] args) {
+		int score;
+		char grade='F';
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("점수입력: ");
+		score = scan.nextInt();
+		
+		
+		if(score >= 90)
+			grade = 'A';
+		else if(score >= 80) 
+			grade = 'B';
+		else if(score >= 70)
+			grade = 'C';		
+			
+		System.out.println("당신의 점수는"+score+"입니다. ");
+		System.out.println("당신의 점수는"+grade+"입니다. ");
+		scan.close();
+	}
+}
+
+
+답
+
+점수입력: 
+
+
+
+
+
+package week4;
+
+public class ScannerEx{
+	public static void main(String[] args) {
+		int a = 3;
+		int b = 1;
+		
+		a+=b; // a = 4, b = 1
+		
+		a = b++; // a = 1, b = 2
+		a = ++b; // a = 3, b = 3
+		a = b--; // a = 3, b = 2
+		a = --b; // a = 1, b = 1 
+		
+		System.out.println("A: "+a);
+		System.out.println("B: "+b);
+	
+	}
+}
+
+
+출력
+
+A: 1
+B: 1
+
+
+
+
+
+
+package week4;
+
+public class ScannerEx{
+	public static void main(String[] args) {
+		System.out.println('a'>'b');
+		System.out.println(3 >=2);
+		System.out.println(-1 < 0);
+		System.out.println(3.45 <= 2);
+		System.out.println(3 == 2);
+		System.out.println(!(3 != 2));
+		System.out.println((3 > 2)&&(3 > 4));
+		System.out.println((3 != 2) || (-1 > 0));
+		System.out.println((3 != 2)^(- 1> 0));
+	}
+}
+
+
+출력이 
+
+
+
+
+
+
+
+
+
+package zv2;
+import java.util.Scanner;
+
+public class test{
+	public static void main(String args[]) {
+		System.out.println("이름,도시,나이,체중,독신 여부를 빈칸으로 분리하여 입력하세요");
+	
+		Scanner scanner = new Scanner(System.in);
+		String name = scanner.next();
+		System.out.println("당신의 이름은 " + name +"입니다.");
+		String city = scanner.next();
+		System.out.println("당신이 사는 도시는" + city +"입니다.");
+		int age = scanner.nextInt();
+		System.out.println("당신의 나이는" + age +"살입니다.");
+		double weight = scanner.nextDouble();//실수 토큰 읽기
+		System.out.println("당신의 체중은 " + weight +"kg입니다.");
+		boolean single = scanner.nextBoolean();
+		System.out.println("당신의 독신 여부는 " + single +"입니다.");
+		
+		scanner.close();
+	
+ }
+}
+
+
+출력이
+
+이름,도시,나이,체중,독신 여부를 빈칸으로 분리하여 입력하세요
+
+
+
+
+
+
+
+package zv2;
+
+import java.util.Scanner;
+
+public class test {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("첫번재 문자:");
+		int a = scan.nextInt();
+	
+		System.out.println("두번쨰 숫자:");
+		int b = scan.nextInt();
+	
+		System.out.println("더한값:"+(a+b));
+	
+}
+}
+
+
+
+
+출력
+
+첫번재 문자:
+
+
+
+
+
+
+
+
+
+
+
+package week4;
+
+import java.util.Scanner;
+
+public class ScannerEx{
+	public static void main(String[] args) {
+		int score;
+		char grade;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("점수입력: ");
+		score = scan.nextInt().Int();
+		
+		
+		if(score>=90) {
+			System.out.println("당신의 점수는"+score+"입니다");
+			System.out.println("당신의 등급은 A 입니다.");
+		}
+		else if (a>=80) 
+		{
+			System.out.println("당신의 점수는"+score+"입니다");
+			System.out.println("당신의 등급은 B 입니다.");
+		}
+		else if(a>=70){
+			System.out.println("당신의 점수는"+score+"입니다");
+			System.out.println("당신의 등급은 A 입니다.");
+		}
+		else {	
+			System.out.println("낙제 입니다.:");
+		}
+}
+} System.out.println("점수를 입력하세요");
+
+->이거 해결 못함..이거 오류남 고쳐야지...지금 새벽이니 자고나서..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
