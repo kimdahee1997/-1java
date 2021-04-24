@@ -1,0 +1,62 @@
+class Solution {
+	public static void main(String[] args) {
+		String s = "pyY";
+		System.out.println(solution(s));
+	}
+
+	public static boolean solution(String s) {
+		boolean answer = true;
+		int p_cnt=0;
+		int y_cnt=0;
+		for(int i=0; i<s.length(); i++) {
+			if(s.charAt(i)=='p' || s.charAt(i)=='P') {
+				p_cnt++;
+			}
+			if(s.charAt(i)=='y' || s.charAt(i)=='Y') {
+				y_cnt++;	
+			}
+		}
+		
+		if(p_cnt==y_cnt) {
+			answer = true;
+		}else {
+			answer = false;
+		}
+
+		return answer;
+	}
+}
+
+문자내 p와y의 개수
+
+
+
+
+
+class Solution {
+    public String solution(int num) {
+      StringBuilder sb = new StringBuilder();
+		if (num % 2 == 0) {
+			sb.append("Even");
+		} else {
+			sb.append("Odd");
+		}
+		return sb.toString();
+  }
+}
+
+
+짝수와 홀수
+
+
+class Solution {
+public String solution(int num) {
+final String even = "Even";
+final String odd = "Odd";
+return (num % 2 == 0) ? even : odd;
+}
+}
+ㅇㅅㅇ 
+
+
+
